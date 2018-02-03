@@ -1,3 +1,4 @@
+package IntergationTests;
 
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -12,7 +13,7 @@ import java.net.URL;
 
 
 
-public class MyTestClass1 {
+public class TestClass1 {
 
     Reporter report;
     WebDriver driver;
@@ -33,7 +34,7 @@ public class MyTestClass1 {
         driver.quit();
     }
 
-    @Test
+    @Test(description = "Проверка из класса 1")
     public void test1()
     {
 
@@ -41,7 +42,7 @@ public class MyTestClass1 {
 
         driver.findElement(By.cssSelector("#text")).sendKeys("Хочу!" + Keys.ENTER);
 
-
+        report.log("Работает...class1)");
     }
 
 

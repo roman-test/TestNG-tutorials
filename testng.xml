@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Интерграционные тесты" parallel="tests">
+
+  <test name="Первый тест">
+    <classes>
+      <class name="IntergationTests.TestClass1"/>
+
+    </classes>
+  </test>
+
+  <test name="Второй тест">
+    <classes>
+
+      <class name="IntergationTests.TestClass2"/>
+
+    </classes>
+  </test>
+
+  <test name="Третий тест">
+    <classes>
+
+      <class name="IntergationTests.TestClass3"/>
+    </classes>
+  </test>
+
+
+</suite>
+

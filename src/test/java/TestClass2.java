@@ -1,3 +1,6 @@
+package IntergationTests;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +16,7 @@ import java.net.URL;
 
 
 
-public class MyTestClass2 {
+public class TestClass2 {
 
     Reporter report;
     WebDriver driver;
@@ -36,14 +39,14 @@ public class MyTestClass2 {
         driver.quit();
     }
 
-    @Test
-    public void test1()
+    @Test(description = "Проверка из класса 2")
+    public void test2222()
     {
         driver.get("https://google.ru");
 
         driver.findElement(By.cssSelector("#lst-ib")).sendKeys("Привет!" + Keys.ENTER);
 
-
+        report.log("Работает...class2");
     }
 
 
