@@ -51,7 +51,7 @@
  - Чтобы подключить кофиг testng.xml к проекту , на него нужно сослаться в pom.xml файле (выполняемого maven-ом),
  для этого добавляем в pom.xml такую хрень:
  
- после блока </dependencies>
+ после блока "dependencies"
 
     <build>
         <plugins>
@@ -61,13 +61,13 @@
                 <version>2.20</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>**testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-жесть .. столько букв а смысла - просто сказали что нужно юзать наш testng.xml =)
+жесть .. столько букв  - просто сказали что нужно юзать наш testng.xml =)
 
 - тесты запускать можно и в IDEA (правой кнопкой на testng.xml -> run) 
   и с консоли: mvn test
